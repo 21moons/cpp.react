@@ -33,6 +33,7 @@ public:
     EventStreamBase() = default;
     EventStreamBase(const EventStreamBase&) = default;
 
+    // ÓÒÖµÒıÓÃ
     template <typename T>
     EventStreamBase(T&& t) :
         EventStreamBase::CopyableReactive( std::forward<T>(t) )
